@@ -65,16 +65,97 @@
             <div class="navbar-end">
               <div class="navbar-item">
                 <div class="buttons">
-                  <a class="button is-dark">
-                    <strong>登録</strong>
-                  </a>
-                  <a class="button is-light">
-                    ログイン
-                  </a>
+                    <a class="button is-dark" id="signUp-button">
+                        <strong>登録</strong>
+                    </a>
+                    <a class="button is-light" id="login-button">
+                        ログイン
+                    </a>
                 </div>
-              </div>
             </div>
+        </div>
     </nav>
+    <!-- login modal -->
+    <div class="modal" id="modal-login">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <div class="modal-card-head">
+                ログイン
+            </div>
+            <div class="modal-card-body">
+                <form action="#" method="POST">
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input type="email" class="input" placeholder="メールアドレスご入力ください">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control has-icons-left">
+                            <input type="text" class="input" placeholder="パスワードご入力ください">
+                            <span class="icon is-small is-left"><i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-card-foot">
+                <div class="field">
+                    <button type="submit" class="button is-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large"></button>
+    </div>
+    <!-- sign up modal -->
+    <div class="modal" id="modal-signUp">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <form action="#" method="POST">
+                <div class="modal-card-head">新規登録</div>
+                <div class="modal-card-body">
+                    <div class="columns">
+                        <div class="column is-offset-one-fifth is-three-fifths">
+                            <div class="field">
+                                <div class="control has-icons-left">
+                                    <input type="text" id="account" name="email" class="input" placeholder="メールアドレス" required>
+                                    <span class="icon is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control has-icons-left">
+                                    <input type="password" name="password" class="input" placeholder="パスワード" required>
+                                    <span class="icon is-left">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" class="input" name="lastName" placeholder="姓" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input type="text" class="input" name="firstName" placeholder="名" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-card-foot">
+                    <div class="field">
+                        <button type="submit" class="button is-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <button class="modal-close is-large"></button>
+    </div>
     <main>
         <div class="columns is-gapless">
             <div class="column is-2 side-menu is-hidden-mobile" id="menu">

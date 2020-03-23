@@ -18,10 +18,6 @@ aside a {
 .card .card-content, .card .card-footer {
   display: none; }
 
-footer {
-  margin: 12px 0 0;
-  width: 100%; }
-
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

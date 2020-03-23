@@ -36,9 +36,20 @@ $(document).ready(function() {
             footer.slideDown();
 
         }
-        // $(this).find('.card-content').slideDown();
-        // $(this).find('.card .card-footer').slideDown();
         
     });
+
+    $('#login-button').click(() => {
+            $('#modal-login').addClass('is-active');
+        });
+      
+    $('#signUp-button').click(() => {
+            $('#modal-signUp').addClass('is-active');
+        });
+
+    $('.modal-background').click(() => {
+            $('#modal-login').removeClass('is-active');
+            $('#modal-signUp').removeClass('is-active');
+        });
 
   });   
