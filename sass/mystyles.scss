@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+$my-red: #d50000;
+$my-black:#212121;
+$my-navy-blue:#000051;
+$my-white: hsl(0, 0%, 100%);
+$my-white-bis: hsl(0, 0%, 96%);
+
+$family-code: Hiragino Sans,"ヒラギノ角ゴシック",Hiragino Kaku Gothic ProN,"ヒラギノ角ゴ ProN W3",Roboto,"Droid Sans",YuGothic,"游ゴシック",Meiryo,"メイリオ",Verdana,"ＭＳ Ｐゴシック",sans-serif;
+$footer-background-color: $my-black;
+$primary: $my-red;
+$link: $my-white;
+// $link-hover: $my-white-bis;
+$menu-item-color: $my-white;
+// $navbar-dropdown-background-color: $primary;
+
+// @media (max-width: 320px) {
+//     nav {
+//         width: 90%;
+//     }
+//     footer {
+//         width: 90%;
+//     }
+// }
+
+aside a {
+    color: $my-white;
+}
+
+.card a {
+    color: $my-red;
+}
+
+#menu {
+    background-color: $my-navy-blue;
+    // position: fixed;
+    // left: -1000;
+}
+
+.main {
+    background-color: $my-white;
+}
+
+#burger1 {
+    margin: 0;
+}
+
+.card .card-content, .card .card-footer {
+
+    display: none;
+
+}
+
+footer {
+    margin: 12px 0 0;
+    width: 100%;
+}
+
+// @import "../node_modules/bulma/sass/utilities/_all.sass";
+// @import "../node_modules/bulma/sass/base/_all.sass";
+// @import "../node_modules/bulma/sass/elements/button.sass";
+// @import "../node_modules/bulma/sass/elements/container.sass";
+// @import "../node_modules/bulma/sass/elements/title.sass";
+// @import "../node_modules/bulma/sass/form/_all.sass";
+// @import "../node_modules/bulma/sass/components/navbar.sass";
+// @import "../node_modules/bulma/sass/layout/hero.sass";
+// @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/bulma.sass";

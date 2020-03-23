@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <script src="/techCOverflow/node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="/techCOverflow/css/mystyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech C Overflow</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+    <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger1">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+            <a href="#" class="navbar-item is-family-primary">
+                <img src="/techCOverflow/images/tech-c-logo.png" alt="">
+                
+                &nbsp Tech C <span class="has-text-weight-bold">
+                    &nbspOverflow
+                </span>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger2">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#">
+                    ホーム
+                </a>
+                
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link is-arrowless" href="#">
+                        その他
+                    </a>
+                    
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">
+                            ウェブサイトについて
+                        </a>
+                        <a class="navbar-item" href="#">
+                            コンタクト
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="#">
+                            バグレポート
+                        </a>
+                    </div>
+                </div>
+                <form>
+                    <div class="navbar-item field">
+                        <div class="control is-expanded">
+                            <input type="search" class="input is-fullwidth" placeholder="検索">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button is-dark">
+                    <strong>登録</strong>
+                  </a>
+                  <a class="button is-light">
+                    ログイン
+                  </a>
+                </div>
+              </div>
+            </div>
+    </nav>
+    <main>
+        <div class="columns is-gapless">
+            <div class="column is-2 side-menu is-hidden-mobile" id="menu">
+                <section class="section">
+                    <div class="container">
+                        <aside class="menu">
+                            <p class="menu-label">
+                                メニュー
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>ホーム</a></li>
+                                <li><a>プロフィール</a></li>
+                            </ul>
+                            <p class="menu-label">
+                                トピック
+                            </p>
+                            <ul class="menu-list">
+                                <li><a>言語</a>
+                                <ul>
+                                    <li><a>Php</a></li>
+                                    <li><a>Python</a></li>
+                                    <li><a>JavaScript</a></li>
+                                    <li><a>Ruby</a></li>
+                                    <li><a>HTML & CSS</a></li>
+                                </ul>
+                                </li>
+                                <li><a>UI/UX</a></li>
+                                <li><a>アルゴリズム</a></li>
+                                <li><a>人工知能</a></li>
+                                <li><a>CG</a></li>
+                            </ul>
+                        </aside>    
+                    </div>
+                </section>
+            </div>
+            <div class="column is-8">
+                <section class="section">
+                    {% block main %}
+                        
+                    {% endblock main %}
+                </section>
+            </div>
+            <div class="column">
+                <section class="section">
+                    <div class="container">
+                        <div class="box">
+                            広告
+                        </div>
+                        <div class="box">
+                            広告
+                        </div>
+                        <div class="box">
+                            広告
+                        </div>
+                        <div class="box">
+                            広告
+                        </div>
+                        <div class="box">
+                            広告
+                        </div>
+                        <div class="box">
+                            広告
+                        </div>
+                        <div class="box">
+                            広告
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer has-text-white">
+        <div class="content has-text-centered">
+            <a href="https://www.tech.ac.jp/" target="_BLANK">Tech C.</a> の Stack Overflow 見たいなウェブサイト<br>
+            作者：<a href="https://github.com/eugenesinamban" target="_BLANK">シナンバン・ユージン</a>
+        </div>
+    </footer>
+    <script src="/techCOverflow/jquery.js"></script>
+</body>
+</html>

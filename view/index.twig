@@ -1,0 +1,62 @@
+{% extends "template.twig" %}
+
+{% block main %}
+    <div class="container main">
+        <div class="columns is-mobile">
+            <div class="column">
+                <h1 class="title">
+                    最新質問
+                </h1>
+            </div>
+            <div class="column has-text-right">
+                <a href="#" class="button is-primary">新しい質問</a>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-3">
+                XXXX questions
+            </div>
+            <div class="column is-9">
+                <div class="columns">
+                    <div class="column is-8">
+                        <div class="buttons is-right has-addons">
+                            <button class="button">sort</button>
+                            <button class="button">sort</button>
+                            <button class="button">sort</button>
+                        </div>
+                    </div>
+                    <div class="column is-3 has-text-right">
+                        <div class="buttons is-right">
+                            <button class="button">filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% for i in 1..10 %}
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Question
+                </p>
+                <a href="" class="card-header-icon" aria-label="more options">
+                    <span class="icon">
+                        <i class="fas fa-angle-down"></i>
+                    </span>
+                </a>
+            </header>
+            <div class="card-content">
+                <div class="columns">
+                    <div class="column is-2">Answers: XXX</div>
+                    <div class="column is-8">Questions</div>
+                    <div class="column">Asked by : </div>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">View</a>
+            </footer>
+        </div>
+        <br>
+        {% endfor %}
+    </div>
+{% endblock main %}
