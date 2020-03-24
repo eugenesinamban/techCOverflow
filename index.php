@@ -2,7 +2,9 @@
 
 require_once "./bootstrap.php";
 
-$viewVars = [];
+$viewVars = [
+    'user' => null
+];
 
 echo $twig->render("index.twig", $viewVars);
 
