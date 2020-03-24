@@ -16,7 +16,7 @@
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
-            <a href="#" class="navbar-item is-family-primary">
+            <a href="/techCOverflow" class="navbar-item is-family-primary">
                 <img src="/techCOverflow/images/tech-c-logo.png" alt="">
                 
                 &nbsp Tech C <span class="has-text-weight-bold">
@@ -31,7 +31,7 @@
         </div>
         <div class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/techCOverflow">
                     ホーム
                 </a>
                 
@@ -73,11 +73,14 @@
                         ログイン
                     </a>
                     {% else %}
-                    <a class="button is-dark">
+                    <a href="/techCOverflow/public/profile.php" class="button is-dark">
                         <strong>プロフィール</strong>
                     </a>
                     <a class="button">
                         メッセージ
+                    </a>
+                    <a href="#" class="button is-primary">
+                        <strong>ログアウト</strong>
                     </a>
                     {% endif %}
                 </div>
@@ -181,9 +184,9 @@
                                 メニュー
                             </p>
                             <ul class="menu-list">
-                                <li><a>ホーム</a></li>
+                                <li><a href="/techCOverflow">ホーム</a></li>
                                 {% if user != null %}
-                                <li><a>プロフィール</a></li>
+                                <li><a href="/techCOverflow/public/profile.php">プロフィール</a></li>
                                 {% endif %}
                             </ul>
                             <p class="menu-label">

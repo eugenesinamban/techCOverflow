@@ -1,0 +1,37 @@
+{% extends "template.twig" %}
+
+{% block main %}
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-one-third">
+                    <div class="box">
+                        <figure class="image is-3by4">
+                            <img src="../images/4.jpeg" alt="Photo">
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-two-thirds">
+                    <div class="content">
+                        <div class="title">
+                            {{ user.name }}
+                        </div>
+                        <div class="subtitle">
+                            {{ user.year }} ー {{ user.course }}
+                        </div>
+                        <table class="table is-striped">
+                            <thead>受賞や行事参加</thead>
+                            <tbody>
+                                {% for item in user.accomplishments %}
+                                    <tr>
+                                        <td>{{item}}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock main %}
