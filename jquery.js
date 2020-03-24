@@ -17,9 +17,9 @@ $(document).ready(function() {
 
     });
 
-    $('.card').click(function() {
-        var content = $(this).find('.card-content');
-        var footer = $(this).find('.card-footer');
+    $('.card-header').click(function() {
+        var content = $(this).siblings('.card-content');
+        var footer = $(this).siblings('.card-footer');
         $("svg", this).toggleClass("fa-angle-up fa-angle-down");
         if (content.hasClass('active') || footer.hasClass('active')) {
             
@@ -39,6 +39,11 @@ $(document).ready(function() {
         
     });
 
+
+    // modals
+
+    
+
     $('#login-button').click(() => {
             $('#modal-login').addClass('is-active');
         });
@@ -47,9 +52,15 @@ $(document).ready(function() {
             $('#modal-signUp').addClass('is-active');
         });
 
-    $('.modal-background').click(() => {
+    $('.modal-background, .modal-close').click(() => {
             $('#modal-login').removeClass('is-active');
             $('#modal-signUp').removeClass('is-active');
         });
 
   });   
+  $(document).on( 
+    'keydown', function(event) { 
+      if (event.key == "Escape" && $('.modal').hasClass('is-active')) { 
+          $('.modal').removeClass('is-active');
+      } 
+  }); 
