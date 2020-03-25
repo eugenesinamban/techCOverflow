@@ -7,6 +7,10 @@ $twig = new \Twig\Environment($loader,[
     'debug' => true
 ]);
 
+define('BASEPATH', realpath(__DIR__));
+define('MODELS', BASEPATH . "/models");
+define('LIB', BASEPATH . "/lib");
+
 // keep only until launch
 $twig->addExtension(new \Twig\Extension\DebugExtension());
 

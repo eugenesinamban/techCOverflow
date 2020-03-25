@@ -25,6 +25,11 @@ $menu-item-color: $my-white;
 //     }
 // }
 
+td a {
+    display: block;
+    color: $my-black;
+}
+
 aside a {
     color: $my-white;
 }

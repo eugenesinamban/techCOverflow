@@ -1,0 +1,31 @@
+{% extends "template.twig" %}
+
+{% block main %}
+    <section class="section">
+        <div class="container">
+            <div class="box">
+                <h1 class="title is-4">
+                    新しいメッセージ
+                </h1>
+                <form action="#" method="POST">
+                    <div class="field">
+                        <div class="control">
+                            <!-- <label for="subject" class="label">件名</label> -->
+                            <input type="text" class="input" id="subject" placeholder="件名">
+
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <textarea name="message" id="message"placeholder="メッセージのご入力お願いします" rows="5" class="textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="submit" class="button is-light is-primary" value="送信">
+                        <a href="./messageIndex.php" class="button">戻る</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock main %}
