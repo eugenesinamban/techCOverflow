@@ -10,79 +10,81 @@
 </head>
 <body>
     <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger1">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-            <a href="/techCOverflow" class="navbar-item is-family-primary">
-                <img src="/techCOverflow/images/tech-c-logo.png" alt="">
-                
-                &nbsp Tech C <span class="has-text-weight-bold">
-                    &nbspOverflow
-                </span>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger2">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="/techCOverflow">
-                    ホーム
+        <div class="container">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger1">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-                
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link is-arrowless" href="#">
-                        その他
+                <a href="/techCOverflow" class="navbar-item is-family-primary">
+                    <img src="/techCOverflow/images/tech-c-logo.png" alt="">
+                    
+                    &nbsp Tech C <span class="has-text-weight-bold">
+                        &nbspOverflow
+                    </span>
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" id="burger2">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/techCOverflow">
+                        ホーム
                     </a>
                     
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="#">
-                            ウェブサイトについて
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless" href="#">
+                            その他
                         </a>
-                        <a class="navbar-item" href="#">
-                            コンタクト
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="#">
-                            バグレポート
-                        </a>
-                    </div>
-                </div>
-                <form>
-                    <div class="navbar-item field">
-                        <div class="control is-expanded">
-                            <input type="search" class="input is-fullwidth" placeholder="検索">
+                        
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="#">
+                                ウェブサイトについて
+                            </a>
+                            <a class="navbar-item" href="#">
+                                コンタクト
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item" href="#">
+                                バグレポート
+                            </a>
                         </div>
                     </div>
-                </form>
-            </div>
-        
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <div class="buttons">
-                    {% if user is null %}
-                    <a class="button is-dark" id="signUp-button">
-                        <strong>登録</strong>
-                    </a>
-                    <a class="button is-light" id="login-button">
-                        ログイン
-                    </a>
-                    {% else %}
-                    <a href="/techCOverflow/public/profile.php" class="button is-dark">
-                        <strong>プロフィール</strong>
-                    </a>
-                    <a href="/techCOverflow/public/messageIndex.php" class="button">
-                        メッセージ
-                    </a>
-                    <a href="#" class="button is-primary">
-                        <strong>ログアウト</strong>
-                    </a>
-                    {% endif %}
+                    <form>
+                        <div class="navbar-item field">
+                            <div class="control is-expanded">
+                                <input type="search" class="input is-fullwidth" placeholder="検索">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            
+                <div class="navbar-end">
+                  <div class="navbar-item">
+                    <div class="buttons">
+                        {% if user is null %}
+                        <a class="button is-dark" id="signUp-button">
+                            <strong>登録</strong>
+                        </a>
+                        <a class="button is-light" id="login-button">
+                            ログイン
+                        </a>
+                        {% else %}
+                        <a href="/techCOverflow/public/profile.php" class="button is-dark">
+                            <strong>プロフィール</strong>
+                        </a>
+                        <a href="/techCOverflow/public/messageIndex.php" class="button">
+                            メッセージ
+                        </a>
+                        <a href="#" class="button is-primary">
+                            <strong>ログアウト</strong>
+                        </a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,10 +175,10 @@
 
     <main>
         <div class="columns is-gapless">
+            <div class="column is-1 side-menu"></div>
             <div class="column is-2 side-menu is-hidden-mobile" id="menu">
                 <section class="section">
-                    <div class="container">
-
+                    <!-- <div class="container"> -->
                         <!-- side menu -->
                         
                         <aside class="menu">
@@ -208,17 +210,17 @@
                                 <li><a>CG</a></li>
                             </ul>
                         </aside>    
-                    </div>
+                    <!-- </div> -->
                 </section>
             </div>
-            <div class="column is-8">
+            <div class="column is-6">
                 <section class="section">
                     {% block main %}
                         
                     {% endblock main %}
                 </section>
             </div>
-            <div class="column">
+            <div class="column is-2 ">
                 <section class="section">
                     <div class="container">
                         <div class="box">
@@ -245,6 +247,7 @@
                     </div>
                 </section>
             </div>
+            <div class="column"></div>
         </div>
     </main>
     <footer class="footer has-text-white">
