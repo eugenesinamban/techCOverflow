@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\organizer1.1\\classes"
+		},
+		{
+			"path": "C:\\xampp\\htdocs\\organizer1.1\\models"
 		}
 	],
 	"settings": {}

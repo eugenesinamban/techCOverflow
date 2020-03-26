@@ -60,3 +60,6 @@ $(document).ready(function() {
           $('.modal').removeClass('is-active');
       } 
   }); 
+function goBack() {
+    window.history.back();
+}
