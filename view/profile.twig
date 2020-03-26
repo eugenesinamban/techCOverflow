@@ -1,0 +1,50 @@
+{% extends "template.twig" %}
+
+{% block main %}
+    <section class="section">
+        <div class="container">
+            <div class="field">
+                <div class="control">
+                    <a href="../index.php" class="button">
+                        <span class="icon is-large">
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <div class="box">
+                        <figure class="image is-3by4">
+                            <img src="../images/4.jpeg" alt="Photo">
+                        </figure>
+                    </div>
+                </div>
+                <div class="column is-two-thirds">
+                    <div class="content">
+                        <div class="title">
+                            {{ user.name }}
+                        </div>
+                        <div class="subtitle">
+                            {{ user.year }} ー {{ user.course }}
+                        </div>
+                        <table class="table is-striped">
+                            <thead>受賞や行事参加</thead>
+                            <tbody>
+                                {% for item in user.accomplishments %}
+                                    <tr>
+                                        <td>{{item}}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="title">自己紹介</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper velit et posuere pulvinar. Cras accumsan faucibus libero, eget interdum purus tempus ullamcorper. Ut fermentum, dolor vel sollicitudin venenatis, sapien nunc venenatis felis, ac euismod augue libero et purus. Fusce at ullamcorper ipsum. Morbi magna magna, vehicula eget purus eu, pretium facilisis elit. Vestibulum tortor nibh, interdum nec pretium dignissim, mollis ut nulla. Quisque risus elit, facilisis in lacinia iaculis, cursus elementum lacus. Curabitur eleifend lobortis tortor, eget mollis erat porttitor sed. Sed id risus nisi. In a tincidunt justo, sed mollis nibh. Sed magna leo, rutrum eu lacinia vel, semper a sapien. Phasellus malesuada arcu luctus tempor tempus.</p>
+            </div>
+        </div>
+    </section>
+{% endblock main %}

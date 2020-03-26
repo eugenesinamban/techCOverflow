@@ -1,0 +1,54 @@
+{% extends "template.twig" %}
+
+{% block main %}
+    <section class="section">
+        <div class="container">
+            <div class="field">
+                <div class="control">
+                    <a href="../index.php" class="button">
+                        <span class="icon is-large">
+                            <i class="fas fa-arrow-left"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="content has-text-centered">
+                        <h1 class="title">
+                            メッセージ
+                        </h1>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="buttons is-centered">
+                        <a href="./messageNew.php" class="button is-primary is-fullwidth is-hidden-desktop">新しいメッセージ</a>
+                        <a href="./messageNew.php" class="button is-primary is-hidden-mobile">新しいメッセージ</a>
+                    </div>
+                </div>
+            </div>
+            <table class="table is-fullwidth is-striped is-hoverable">
+                <thead>
+                    <th>
+                        Sender
+                    </th>
+                    <th>
+                        Subject
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                </thead>
+                <tbody>
+                    {% for i in 0..10 %}
+                    <tr>
+                        <td><a href="./messageView.php">Sender</a></td>
+                        <td><a href="./messageView.php">Subject</a></td>
+                        <td><a href="./messageView.php">2020-03-24</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+{% endblock main %}

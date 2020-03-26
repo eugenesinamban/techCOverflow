@@ -1,9 +1,11 @@
 <?php
 
-require_once './vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
-$loader = new \Twig\Loader\FilesystemLoader('./view');
-$twig = new \Twig\Environment($loader);
+$loader = new \Twig\Loader\FilesystemLoader(__DIR__ . '/view');
+$twig = new \Twig\Environment($loader,[
+    'debug' => true
+]);
 
 define('BASEPATH', realpath(__DIR__));
 define('MODELS', BASEPATH . "/models");

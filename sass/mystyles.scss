@@ -12,8 +12,8 @@ $family-code: Hiragino Sans,"ヒラギノ角ゴシック",Hiragino Kaku Gothic P
 $footer-background-color: $my-black;
 $primary: $my-red;
 $link: $my-white;
-// $link-hover: $my-white-bis;
 $menu-item-color: $my-white;
+$gap: -10px;
 // $navbar-dropdown-background-color: $primary;
 
 // @media (max-width: 320px) {
@@ -25,6 +25,20 @@ $menu-item-color: $my-white;
 //     }
 // }
 
+nav .container {
+    margin: 0 155px 0;
+}
+@media(max-width: 768px) {
+    nav .container {
+        margin: 0 auto 0;
+    }       
+}
+
+td a {
+    display: block;
+    color: $my-black;
+}
+
 aside a {
     color: $my-white;
 }
@@ -33,10 +47,12 @@ aside a {
     color: $my-red;
 }
 
-#menu {
+.card .card-header {
+    cursor: pointer;
+}
+
+.side-menu {
     background-color: $my-navy-blue;
-    // position: fixed;
-    // left: -1000;
 }
 
 .main {

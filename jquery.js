@@ -23,17 +23,13 @@ $(document).ready(function() {
         $("svg", this).toggleClass("fa-angle-up fa-angle-down");
         if (content.hasClass('active') || footer.hasClass('active')) {
             
-            content.removeClass('active');
-            content.slideUp();
-            footer.removeClass('active');
-            footer.slideUp();
+            content.removeClass('active').slideUp();
+            footer.removeClass('active').slideUp();
 
         } else {
 
-            content.addClass('active');
-            content.slideDown();
-            footer.addClass('active');
-            footer.slideDown();
+            content.addClass('active').slideDown();
+            footer.addClass('active').slideDown();
 
         }
         
